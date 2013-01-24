@@ -1,0 +1,1 @@
+You cannot have an empty folder in git, so this is temp file for that

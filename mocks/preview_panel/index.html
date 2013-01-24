@@ -1,0 +1,77 @@
+<!doctype html>
+
+<!-- Preview Panel Feature -->
+
+<head>
+	<title>jQuery UI Dialog - Preview Panel</title>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="ppanel.css">	
+	<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+
+	<script>
+    // increase the default animation speed to exaggerate the effect
+    $.fx.speeds._default = 1000;
+
+    $(function() {
+        $( "#dialog" ).dialog({
+            autoOpen: false,
+            show: "blind",
+            hide: "explode",
+						width: "600",
+						height: "400"
+        });
+ 
+        $( "#opener" ).click(function() {
+            $( "#dialog" ).dialog( "open" );
+            return false;
+        });
+    });
+
+	</script>
+</head>
+
+<body>
+<div id="dialog" title="Quick View - Preview Panel">
+<!--
+	<div class="left-side">
+		<div class="title">
+			<span class="tag"></span>
+			<span class="name">Westgate Flamingo Bay at Las Vegas</span>
+		</div>
+
+
+		<div class="bottom">
+			<img class="thumbnail" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Panda_Cub_from_Wolong%2C_Sichuan%2C_China.JPG/225px-Panda_Cub_from_Wolong%2C_Sichuan%2C_China.JPG" alt="thumbnail">
+			$Price      Website
+		</div>
+	</div>
+
+	<div class="right-side">
+		<h2>Reviews</h2>
+		Reviewer
+		<p>BLAHBLAHBLAHBLAHBLAHBLAH BLAHBLAHBLAHBLAHBLAHBLAH BLAHBLAHBLAHBLAHBLAHBLAH
+		<p>
+
+Reviewer
+		<p>BLAHBLAHBLAHBLAHBLAHBLAH BLAHBLAHBLAHBLAHBLAHBLAH BLAHBLAHBLAHBLAHBLAHBLAH
+		<p>
+Reviewer
+		<p>BLAHBLAHBLAHBLAHBLAHBLAH BLAHBLAHBLAHBLAHBLAHBLAH BLAHBLAHBLAHBLAHBLAHBLAH
+		<p>
+Reviewer
+		<p>BLAHBLAHBLAHBLAHBLAHBLAH BLAHBLAHBLAHBLAHBLAHBLAH BLAHBLAHBLAHBLAHBLAHBLAH
+		<p>
+	</div>
+
+-->
+
+<iframe id="frame" src="http://www.bedandbreakfast.com/">
+</iframe>
+</div> <!-- div for dialog box -->
+ 
+<button id="opener">Quick View</button>
+ 
+ 
+</body>
+</html>
